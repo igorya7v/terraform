@@ -1,6 +1,6 @@
 #-------------------------------------------------------------------------
 # Provision RDS Instance.
-# Use Parameter Store to store the password.
+# Use AWS Secrets Manager to store the password.
 #-------------------------------------------------------------------------
 
 provider "aws" {

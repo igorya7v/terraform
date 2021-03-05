@@ -1,5 +1,5 @@
 #--------------------------------------------------------
-# Provision a simple VM Instance on GCP Platform.
+# Provision an Apache WebServer on AWS Platform.
 #--------------------------------------------------------
 
 provider "aws" {

@@ -1,5 +1,5 @@
 #--------------------------------------------------------
-# Provision a simple VM Instance on GCP Platform.
+# Provision an AWS Security Group using Dynamic Blocks.
 #--------------------------------------------------------
 
 provider "aws" {
