@@ -61,3 +61,51 @@ output "availability_zones" {
 output "available_vpcs" {
   value = data.aws_vpcs.vpcs.ids
 }
+
+
+
+data "aws_ami" "latest_ubuntu_20" {
+  owners      = ["099720109477"]
+  most_recent = true
+  filter {
+    name   = "name"
+    values = ["ubuntu/images/hvm-ssd/ubuntu-focal-20.04-amd64-server-*"]
+  }
+}
+
+data "aws_ami" "latest_amazon_linux" {
+  owners      = ["137112412989"]
+  most_recent = true
+  filter {
+    name   = "name"
+    values = ["amzn2-ami-hvm-*-x86_64-gp2"]
+  }
+}
+
+data "aws_ami" "latest_windows_server_2019" {
+  owners      = ["801119661308"]
+  most_recent = true
+  filter {
+    name   = "name"
+    values = ["Windows_Server-2019-English-Full-Base-*"]
+  }
+}
+
+/* How to use
+resource "aws_instance" "some_server" {
+  ami          = data.aws_ami.latest_ubuntu_20.id
+  intance_type = "t3.micro"
+}
+*/
+
+output "latest_ubuntu_ami_id" {
+  value = data.aws_ami.latest_ubuntu_20.id
+}
+
+output "latest_amazon_linux_ami_id" {
+  value = data.aws_ami.latest_amazon_linux.id
+}
+
+output "latest_windows_server_2019_ami_id" {
+  value = data.aws_ami.latest_windows_server_2019.id
+}
