@@ -6,6 +6,8 @@ provider "aws" {
   region = "us-east-1"
 }
 
+# Data sources allow Terraform use information defined outside of Terraform,
+# defined by another separate Terraform configuration, or modified by functions.
 data "aws_region" "current" {}
 data "aws_caller_identity" "current" {}
 data "aws_availability_zones" "available_zones" {}
@@ -65,6 +67,8 @@ output "available_vpcs" {
 
 
 data "aws_ami" "latest_ubuntu_20" {
+  # The owner is found in the AMIs page
+  # by searching the public images with an AMI id
   owners      = ["099720109477"]
   most_recent = true
   filter {
