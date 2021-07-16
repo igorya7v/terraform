@@ -4,7 +4,6 @@
 #   - Launch Configuration with Auto AMI Lookup.
 #   - Auto Scaling Group using 2 Availability Zoes (AZs).
 #   - Clasic Load Balancer in 2 Availability Zones.
-#   - Green/Blue Deployment Strategy.
 #--------------------------------------------------------------------
 
 provider "aws" {
@@ -56,7 +55,6 @@ resource "aws_launch_configuration" "web" {
   security_groups = [aws_security_group.web.id]
   user_data       = file("user_data.sh")
 
-  # Simple Green/Blue Deployment
   lifecycle {
     create_before_destroy = true
   }
