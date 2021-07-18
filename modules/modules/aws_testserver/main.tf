@@ -28,7 +28,7 @@ resource "aws_instance" "web_server" {
 }
 
 resource "aws_security_group" "webserver" {
-  name_prefix = "${var.name}-WebServer SG"
+  name_prefix = "${var.name}-WebServer SG-"
   vpc_id      = data.aws_subnet.web.vpc_id
 
   ingress {
