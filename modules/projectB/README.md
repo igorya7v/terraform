@@ -12,5 +12,5 @@ Provision AWS EC2 Instances in the Network Layer.
   * EC2 Instances
 
 ## Diagram
-![Diagram](https://github.com/igorya7v/terraform/blob/main/modules/projectA/VPC%20-%20Staging.png)
-https://app.diagrams.net/#G1Ph_2UMdNhZvt7YQ99Ouvm6MKSR8wwe-W
+![Diagram](https://github.com/igorya7v/terraform/blob/main/modules/projectB/ProjectB.png)
+https://app.diagrams.net/#G1XZzkiIouApe9OqLdu1ooC_Bk1Lak0hD8
