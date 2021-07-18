@@ -2,7 +2,7 @@
 # Provision VPC and Web Servers in Public Subnets using Modules
 #-------------------------------------------------------------------------------
 provider "aws" {
-  region = "us-east-1"
+  region = "us-west-1"
 }
 
 module "vpc_prod" {
