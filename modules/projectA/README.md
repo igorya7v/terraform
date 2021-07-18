@@ -11,5 +11,5 @@ Provision AWS Network Layer for Staging and Production environments using the Te
 
 ## Diagram
 
-![Diagram](https://github.com/igorya7v/terraform/blob/main/modules/projectA/VPC%20-%20Staging.png)
+![Diagram](https://github.com/igorya7v/terraform/blob/main/modules/projectA/AWS%20Network%20Layer%20-%20Staging.png)
 https://app.diagrams.net/#G1Ph_2UMdNhZvt7YQ99Ouvm6MKSR8wwe-W
