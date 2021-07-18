@@ -5,12 +5,12 @@ provider "aws" {
   region = "us-west-1"
 }
 
+# commenting out, as there is a limited number of Elastic IPs in AWS free tier
+# module "vpc_default" {
+#   source = "../modules/aws_network"
+# }
 
-module "my_vpc_default" {
-  source = "../modules/aws_network"
-}
-
-module "my_vpc_staging" {
+module "vpc_staging" {
   source               = "../modules/aws_network"
   env                  = "staging"
   vpc_cidr             = "10.100.0.0/16"
@@ -18,7 +18,7 @@ module "my_vpc_staging" {
   private_subnet_cidrs = []
 }
 
-module "my_vpc_prod" {
+module "vpc_prod" {
   source               = "../modules/aws_network"
   env                  = "prod"
   vpc_cidr             = "10.200.0.0/16"
