@@ -11,4 +11,4 @@
 
 ## Diagram
 https://app.diagrams.net/#G1TWxyXF4GRldL3OhLmpoHBYMRVjdBys3j
-![Diagram](AWS Network Module.png)
+![Diagram](https://github.com/igorya7v/terraform/blob/main/modules/modules/aws_network/AWS%20Network%20Module.png)
