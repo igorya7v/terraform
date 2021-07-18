@@ -10,5 +10,5 @@ Note: for a real word project, the best practice is to define the Security Compo
 
 ## Diagram
 
-![Diagram](https://github.com/igorya7v/terraform/blob/main/modules/modules/aws_network/AWS%20Network%20Module.png)
-https://app.diagrams.net/#G1TWxyXF4GRldL3OhLmpoHBYMRVjdBys3j
+![Diagram](https://github.com/igorya7v/terraform/blob/main/modules/modules/aws_testserver/Web%20Server%20Module.png)
+https://app.diagrams.net/#G1zJIToTyYp3s2mj9svwUTUgCS0iWlFonV
