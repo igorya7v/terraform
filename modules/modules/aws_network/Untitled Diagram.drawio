@@ -1,1 +1,187 @@
-<mxfile host="app.diagrams.net" modified="2021-07-18T02:07:09.957Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36" version="14.8.6" etag="Zrn_VlmXcsr5OjAK5X5e" type="github"><diagram id="g4AoqWbRnj0pxb-XM-K8">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2021-07-18T02:07:59.035Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36" etag="9JPz0ndImDnE6zuu8Sjy" version="14.8.6" type="github">
+  <diagram id="g4AoqWbRnj0pxb-XM-K8" name="Page-1">
+    <mxGraphModel dx="1422" dy="762" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="TOk7d_cGTAFBEC6N5CIW-1" value="(Ex: 10.0.0.0/16)" style="rounded=1;arcSize=10;dashed=0;fillColor=none;gradientColor=none;strokeWidth=2;verticalAlign=top;fontSize=15;" vertex="1" parent="1">
+          <mxGeometry x="80" y="120" width="640" height="600" as="geometry" />
+        </mxCell>
+        <mxCell id="TOk7d_cGTAFBEC6N5CIW-2" value="" style="dashed=0;html=1;shape=mxgraph.aws3.virtual_private_cloud;fillColor=#F58536;gradientColor=none;dashed=0;" vertex="1" parent="1">
+          <mxGeometry x="100" y="100" width="52" height="36" as="geometry" />
+        </mxCell>
+        <mxCell id="TOk7d_cGTAFBEC6N5CIW-3" value="" style="outlineConnect=0;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;shape=mxgraph.aws3.internet_gateway;fillColor=#F58536;gradientColor=none;" vertex="1" parent="1">
+          <mxGeometry x="690" y="390" width="69" height="72" as="geometry" />
+        </mxCell>
+        <mxCell id="TOk7d_cGTAFBEC6N5CIW-4" value="" style="outlineConnect=0;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;shape=mxgraph.aws3.router;fillColor=#F58536;gradientColor=none;" vertex="1" parent="1">
+          <mxGeometry x="590" y="390" width="69" height="72" as="geometry" />
+        </mxCell>
+        <mxCell id="TOk7d_cGTAFBEC6N5CIW-5" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="120" y="160" width="440" height="240" as="geometry" />
+        </mxCell>
+        <mxCell id="TOk7d_cGTAFBEC6N5CIW-6" value="Availability Zone A" style="rounded=1;arcSize=10;dashed=1;strokeColor=#F59D56;fillColor=none;gradientColor=none;dashPattern=8 4;strokeWidth=2;verticalAlign=bottom;fontSize=15;" vertex="1" parent="TOk7d_cGTAFBEC6N5CIW-5">
+          <mxGeometry width="440" height="240" as="geometry" />
+        </mxCell>
+        <mxCell id="TOk7d_cGTAFBEC6N5CIW-7" value="Private Subnet&#xa;(Ex: 10.0.11.0/24)" style="rounded=1;arcSize=10;dashed=0;fillColor=none;gradientColor=none;strokeWidth=2;verticalAlign=bottom;fontSize=15;" vertex="1" parent="TOk7d_cGTAFBEC6N5CIW-5">
+          <mxGeometry x="40" y="40" width="160" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="TOk7d_cGTAFBEC6N5CIW-8" value="" style="dashed=0;html=1;shape=mxgraph.aws3.permissions;fillColor=#D9A741;gradientColor=none;dashed=0;" vertex="1" parent="TOk7d_cGTAFBEC6N5CIW-5">
+          <mxGeometry x="52" y="20" width="30" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="TOk7d_cGTAFBEC6N5CIW-9" value="Public Subnet&#xa;(Ex: 10.0.1.0/24)" style="rounded=1;arcSize=10;dashed=0;fillColor=none;gradientColor=none;strokeWidth=2;verticalAlign=bottom;fontSize=15;" vertex="1" parent="TOk7d_cGTAFBEC6N5CIW-5">
+          <mxGeometry x="240" y="40" width="160" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="TOk7d_cGTAFBEC6N5CIW-10" value="" style="outlineConnect=0;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;shape=mxgraph.aws3.vpc_nat_gateway;fillColor=#F58536;gradientColor=none;" vertex="1" parent="TOk7d_cGTAFBEC6N5CIW-5">
+          <mxGeometry x="305" y="50.00999999999999" width="53.91" height="56.25" as="geometry" />
+        </mxCell>
+        <mxCell id="TOk7d_cGTAFBEC6N5CIW-11" value="NAT Gateway A" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=15;" vertex="1" parent="TOk7d_cGTAFBEC6N5CIW-5">
+          <mxGeometry x="290.98" y="114.13" width="81.95" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="TOk7d_cGTAFBEC6N5CIW-12" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="120" y="440" width="440" height="240" as="geometry" />
+        </mxCell>
+        <mxCell id="TOk7d_cGTAFBEC6N5CIW-13" value="Availability Zone B" style="rounded=1;arcSize=10;dashed=1;strokeColor=#F59D56;fillColor=none;gradientColor=none;dashPattern=8 4;strokeWidth=2;verticalAlign=bottom;fontSize=15;" vertex="1" parent="TOk7d_cGTAFBEC6N5CIW-12">
+          <mxGeometry width="440" height="240" as="geometry" />
+        </mxCell>
+        <mxCell id="TOk7d_cGTAFBEC6N5CIW-14" value="Private Subnet&#xa;(Ex: 10.0.22.0/24)" style="rounded=1;arcSize=10;dashed=0;fillColor=none;gradientColor=none;strokeWidth=2;verticalAlign=bottom;fontSize=15;" vertex="1" parent="TOk7d_cGTAFBEC6N5CIW-12">
+          <mxGeometry x="40" y="40" width="160" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="TOk7d_cGTAFBEC6N5CIW-15" value="" style="dashed=0;html=1;shape=mxgraph.aws3.permissions;fillColor=#D9A741;gradientColor=none;dashed=0;" vertex="1" parent="TOk7d_cGTAFBEC6N5CIW-12">
+          <mxGeometry x="52" y="20" width="30" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="TOk7d_cGTAFBEC6N5CIW-16" value="Public Subnet&#xa;(Ex: 10.0.2.0/24)" style="rounded=1;arcSize=10;dashed=0;fillColor=none;gradientColor=none;strokeWidth=2;verticalAlign=bottom;fontSize=15;" vertex="1" parent="TOk7d_cGTAFBEC6N5CIW-12">
+          <mxGeometry x="240" y="40" width="160" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="TOk7d_cGTAFBEC6N5CIW-17" value="" style="outlineConnect=0;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;shape=mxgraph.aws3.vpc_nat_gateway;fillColor=#F58536;gradientColor=none;" vertex="1" parent="TOk7d_cGTAFBEC6N5CIW-12">
+          <mxGeometry x="305" y="50.00999999999999" width="53.91" height="56.25" as="geometry" />
+        </mxCell>
+        <mxCell id="TOk7d_cGTAFBEC6N5CIW-18" value="NAT Gateway B" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=15;" vertex="1" parent="TOk7d_cGTAFBEC6N5CIW-12">
+          <mxGeometry x="290.98" y="114.13" width="81.95" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="TOk7d_cGTAFBEC6N5CIW-19" value="Routing Table&#xa;Private Subnet A" style="shape=table;startSize=50;container=1;collapsible=0;childLayout=tableLayout;fontStyle=1;align=center;fontSize=15;" vertex="1" parent="1">
+          <mxGeometry x="320" y="762" width="200" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="TOk7d_cGTAFBEC6N5CIW-20" value="" style="shape=partialRectangle;html=1;whiteSpace=wrap;collapsible=0;dropTarget=0;pointerEvents=0;fillColor=none;top=0;left=0;bottom=0;right=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="TOk7d_cGTAFBEC6N5CIW-19">
+          <mxGeometry y="50" width="200" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="TOk7d_cGTAFBEC6N5CIW-21" value="Destination" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;overflow=hidden;" vertex="1" parent="TOk7d_cGTAFBEC6N5CIW-20">
+          <mxGeometry width="100" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="TOk7d_cGTAFBEC6N5CIW-22" value="Target" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;overflow=hidden;" vertex="1" parent="TOk7d_cGTAFBEC6N5CIW-20">
+          <mxGeometry x="100" width="100" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="TOk7d_cGTAFBEC6N5CIW-23" value="" style="shape=partialRectangle;html=1;whiteSpace=wrap;collapsible=0;dropTarget=0;pointerEvents=0;fillColor=none;top=0;left=0;bottom=0;right=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="TOk7d_cGTAFBEC6N5CIW-19">
+          <mxGeometry y="84" width="200" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="TOk7d_cGTAFBEC6N5CIW-24" value="10.0.0.0/16" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;overflow=hidden;" vertex="1" parent="TOk7d_cGTAFBEC6N5CIW-23">
+          <mxGeometry width="100" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="TOk7d_cGTAFBEC6N5CIW-25" value="local" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;overflow=hidden;" vertex="1" parent="TOk7d_cGTAFBEC6N5CIW-23">
+          <mxGeometry x="100" width="100" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="TOk7d_cGTAFBEC6N5CIW-26" value="" style="shape=partialRectangle;html=1;whiteSpace=wrap;collapsible=0;dropTarget=0;pointerEvents=0;fillColor=none;top=0;left=0;bottom=0;right=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="TOk7d_cGTAFBEC6N5CIW-19">
+          <mxGeometry y="116" width="200" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="TOk7d_cGTAFBEC6N5CIW-27" value="0.0.0.0/0" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;overflow=hidden;" vertex="1" parent="TOk7d_cGTAFBEC6N5CIW-26">
+          <mxGeometry width="100" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="TOk7d_cGTAFBEC6N5CIW-28" value="NAT Gateway A" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;overflow=hidden;" vertex="1" parent="TOk7d_cGTAFBEC6N5CIW-26">
+          <mxGeometry x="100" width="100" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="TOk7d_cGTAFBEC6N5CIW-29" value="Routing Table&#xa;Private Subnet B" style="shape=table;startSize=50;container=1;collapsible=0;childLayout=tableLayout;fontStyle=1;align=center;fontSize=15;" vertex="1" parent="1">
+          <mxGeometry x="560" y="762" width="200" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="TOk7d_cGTAFBEC6N5CIW-30" value="" style="shape=partialRectangle;html=1;whiteSpace=wrap;collapsible=0;dropTarget=0;pointerEvents=0;fillColor=none;top=0;left=0;bottom=0;right=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="TOk7d_cGTAFBEC6N5CIW-29">
+          <mxGeometry y="50" width="200" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="TOk7d_cGTAFBEC6N5CIW-31" value="Destination" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;overflow=hidden;" vertex="1" parent="TOk7d_cGTAFBEC6N5CIW-30">
+          <mxGeometry width="100" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="TOk7d_cGTAFBEC6N5CIW-32" value="Target" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;overflow=hidden;" vertex="1" parent="TOk7d_cGTAFBEC6N5CIW-30">
+          <mxGeometry x="100" width="100" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="TOk7d_cGTAFBEC6N5CIW-33" value="" style="shape=partialRectangle;html=1;whiteSpace=wrap;collapsible=0;dropTarget=0;pointerEvents=0;fillColor=none;top=0;left=0;bottom=0;right=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="TOk7d_cGTAFBEC6N5CIW-29">
+          <mxGeometry y="84" width="200" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="TOk7d_cGTAFBEC6N5CIW-34" value="10.0.0.0/16" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;overflow=hidden;" vertex="1" parent="TOk7d_cGTAFBEC6N5CIW-33">
+          <mxGeometry width="100" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="TOk7d_cGTAFBEC6N5CIW-35" value="local" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;overflow=hidden;" vertex="1" parent="TOk7d_cGTAFBEC6N5CIW-33">
+          <mxGeometry x="100" width="100" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="TOk7d_cGTAFBEC6N5CIW-36" value="" style="shape=partialRectangle;html=1;whiteSpace=wrap;collapsible=0;dropTarget=0;pointerEvents=0;fillColor=none;top=0;left=0;bottom=0;right=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="TOk7d_cGTAFBEC6N5CIW-29">
+          <mxGeometry y="116" width="200" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="TOk7d_cGTAFBEC6N5CIW-37" value="0.0.0.0/0" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;overflow=hidden;" vertex="1" parent="TOk7d_cGTAFBEC6N5CIW-36">
+          <mxGeometry width="100" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="TOk7d_cGTAFBEC6N5CIW-38" value="NAT Gateway B" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;overflow=hidden;" vertex="1" parent="TOk7d_cGTAFBEC6N5CIW-36">
+          <mxGeometry x="100" width="100" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="TOk7d_cGTAFBEC6N5CIW-39" value="Routing Table&#xa;Public Subnets" style="shape=table;startSize=50;container=1;collapsible=0;childLayout=tableLayout;fontStyle=1;align=center;fontSize=15;" vertex="1" parent="1">
+          <mxGeometry x="80" y="764" width="200" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="TOk7d_cGTAFBEC6N5CIW-40" value="" style="shape=partialRectangle;html=1;whiteSpace=wrap;collapsible=0;dropTarget=0;pointerEvents=0;fillColor=none;top=0;left=0;bottom=0;right=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="TOk7d_cGTAFBEC6N5CIW-39">
+          <mxGeometry y="50" width="200" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="TOk7d_cGTAFBEC6N5CIW-41" value="Destination" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;overflow=hidden;" vertex="1" parent="TOk7d_cGTAFBEC6N5CIW-40">
+          <mxGeometry width="100" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="TOk7d_cGTAFBEC6N5CIW-42" value="Target" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;overflow=hidden;" vertex="1" parent="TOk7d_cGTAFBEC6N5CIW-40">
+          <mxGeometry x="100" width="100" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="TOk7d_cGTAFBEC6N5CIW-43" value="" style="shape=partialRectangle;html=1;whiteSpace=wrap;collapsible=0;dropTarget=0;pointerEvents=0;fillColor=none;top=0;left=0;bottom=0;right=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="TOk7d_cGTAFBEC6N5CIW-39">
+          <mxGeometry y="84" width="200" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="TOk7d_cGTAFBEC6N5CIW-44" value="10.0.0.0/16" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;overflow=hidden;" vertex="1" parent="TOk7d_cGTAFBEC6N5CIW-43">
+          <mxGeometry width="100" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="TOk7d_cGTAFBEC6N5CIW-45" value="local" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;overflow=hidden;" vertex="1" parent="TOk7d_cGTAFBEC6N5CIW-43">
+          <mxGeometry x="100" width="100" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="TOk7d_cGTAFBEC6N5CIW-46" value="" style="shape=partialRectangle;html=1;whiteSpace=wrap;collapsible=0;dropTarget=0;pointerEvents=0;fillColor=none;top=0;left=0;bottom=0;right=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="TOk7d_cGTAFBEC6N5CIW-39">
+          <mxGeometry y="116" width="200" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="TOk7d_cGTAFBEC6N5CIW-47" value="0.0.0.0/0" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;overflow=hidden;" vertex="1" parent="TOk7d_cGTAFBEC6N5CIW-46">
+          <mxGeometry width="100" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="TOk7d_cGTAFBEC6N5CIW-48" value="Internet Gateway" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;overflow=hidden;" vertex="1" parent="TOk7d_cGTAFBEC6N5CIW-46">
+          <mxGeometry x="100" width="100" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="TOk7d_cGTAFBEC6N5CIW-49" value="Terraform Network Layer Module.&lt;br style=&quot;font-size: 20px&quot;&gt;The default configuration will provision the following AWS VPC infrastructure" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=20;" vertex="1" parent="1">
+          <mxGeometry x="60" y="40" width="720" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="TOk7d_cGTAFBEC6N5CIW-50" value="Internet&lt;br&gt;Gateway" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=15;" vertex="1" parent="1">
+          <mxGeometry x="740" y="480" width="40" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="TOk7d_cGTAFBEC6N5CIW-51" value="" style="endArrow=none;html=1;fontSize=15;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=3;" edge="1" parent="1" source="TOk7d_cGTAFBEC6N5CIW-9" target="TOk7d_cGTAFBEC6N5CIW-4">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="650" y="380" as="sourcePoint" />
+            <mxPoint x="700" y="330" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="625" y="280" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TOk7d_cGTAFBEC6N5CIW-52" value="" style="endArrow=none;html=1;fontSize=15;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=3;" edge="1" parent="1" source="TOk7d_cGTAFBEC6N5CIW-16" target="TOk7d_cGTAFBEC6N5CIW-4">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="530" y="290" as="sourcePoint" />
+            <mxPoint x="634.5" y="400" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="625" y="560" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TOk7d_cGTAFBEC6N5CIW-53" value="Router&lt;br&gt;See the default Routing tables bellow" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=15;" vertex="1" parent="1">
+          <mxGeometry x="559.5" y="490" width="130" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="TOk7d_cGTAFBEC6N5CIW-54" value="" style="endArrow=none;html=1;fontSize=15;strokeWidth=3;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;fillColor=#d5e8d4;strokeColor=#82b366;" edge="1" parent="1" source="TOk7d_cGTAFBEC6N5CIW-4" target="TOk7d_cGTAFBEC6N5CIW-3">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="650" y="480" as="sourcePoint" />
+            <mxPoint x="690" y="430" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
